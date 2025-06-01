@@ -5,6 +5,11 @@ const app = express();
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
+// Citation Scope: Setting up Stripe implementation for payments
+// Date: 05/04/2025
+// Originality: Adapted
+// Source: https://docs.stripe.com/checkout/custom/quickstart
+
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
